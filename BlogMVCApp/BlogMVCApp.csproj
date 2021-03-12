@@ -125,6 +125,7 @@
     <Content Include="Content\images\Png %288%29.png" />
     <Content Include="Content\images\Png %289%29.png" />
     <Content Include="Content\images\Png.png" />
+    <Content Include="favicon.ico" />
     <Content Include="Fonts\flaticon\backup.txt" />
     <Content Include="Fonts\flaticon\font\flaticon.css" />
     <Content Include="Fonts\flaticon\font\flaticon.html" />
