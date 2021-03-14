@@ -13,7 +13,7 @@ namespace BlogMVCApp.Models
         [StringLength(maximumLength: 40, MinimumLength = 2)]
         public string Title { get; set; }
         public Author Author { get; set; }
-        public int AuthorId
+        public int AuthorId { get; set; }
         public DateTime PublishDate { get; set; }
         public DateTime WrittenDate { get; set; }
         [Required]

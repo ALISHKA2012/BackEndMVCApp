@@ -23,7 +23,6 @@ namespace BlogMVCApp.Models
 
         public string Email { get; set; }
         public bool IsAuthor { get; set; }
-        public Author Author { get; set; }
-        public int? AuthorId { get; set; }
+      
     }
 }
