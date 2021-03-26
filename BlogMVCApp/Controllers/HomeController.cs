@@ -13,5 +13,10 @@ namespace BlogMVCApp.Controllers
         {
             return View();
         }
+        public ActionResult Travel()
+        {
+            return View();
+        }
+
     }
 }
