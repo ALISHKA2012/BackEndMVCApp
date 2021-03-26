@@ -175,6 +175,10 @@
     <Compile Include="Migrations\202103141606583_Initial2.designer.cs">
       <DependentUpon>202103141606583_Initial2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103261317263_Menu-updated.cs" />
+    <Compile Include="Migrations\202103261317263_Menu-updated.designer.cs">
+      <DependentUpon>202103261317263_Menu-updated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Author.cs" />
@@ -208,6 +212,8 @@
     <Content Include="Fonts\open-iconic\open-iconic.woff" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Travel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103141606583_Initial2.resx">
       <DependentUpon>202103141606583_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103261317263_Menu-updated.resx">
+      <DependentUpon>202103261317263_Menu-updated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
