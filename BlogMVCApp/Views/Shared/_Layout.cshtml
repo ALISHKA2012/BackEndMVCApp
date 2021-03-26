@@ -34,15 +34,11 @@
     <div id="colorlib-page">
         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
         <aside id="colorlib-aside" role="complementary" class="js-fullheight">
-            <nav id="colorlib-main-menu" role="navigation">
-                <ul>
-                    <li class="colorlib-active">@Html.ActionLink("Roblox", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Robloxx", "Robloxx", "Home")</li>
-                    <li>@Html.ActionLink("Robloxxx", "Travel", "Home")</li>
-                    <li>@Html.ActionLink("Robloxxxx", "Robloxxxx", "Home")</li>
-                    <li>@Html.ActionLink("OnlyRobloxxxxx", "OnlyRobloxxxxx", "Home")</li>
-                </ul>
-            </nav>
+        @*@{
+            Html.RenderPartial("_MenuPartial");
+         }*@
+        @Html.Action("AllMenus", "Menus");
+           
 
             <div class="colorlib-footer">
                 <h1 id="colorlib-logo" class="mb-4">

@@ -9,15 +9,46 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(BlogMVCApp.Data.BlogContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            context.Menus.AddOrUpdate
+            (
+                new Models.Menu
+                {
+                    IsActive = true,
+                    Name = "Travel",
+                    ControllerName = "Home",
+                    ActionName = "Travel",
+                    Order = 1
+                },
+                     new Models.Menu
+                     {
+                         IsActive = true,
+                         Name = "Fashion",
+                         ControllerName = "Home",
+                         ActionName = "Fashion",
+                         Order = 2
+                     },
+                          new Models.Menu
+                          {
+                              IsActive = true,
+                              Name = "About",
+                              ControllerName = "Home",
+                              ActionName = "About",
+                              Order = 3
+                          },
+                               new Models.Menu
+                               {
+                                   IsActive = true,
+                                   Name = "Contact",
+                                   ControllerName = "Home",
+                                   ActionName = "Contact",
+                                   Order = 4
+                               }
+            );
         }
     }
 }

@@ -163,6 +163,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenusController.cs" />
     <Compile Include="Data\BlogContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -178,6 +179,10 @@
     <Compile Include="Migrations\202103261317263_Menu-updated.cs" />
     <Compile Include="Migrations\202103261317263_Menu-updated.designer.cs">
       <DependentUpon>202103261317263_Menu-updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103261940185_menuUpdated.cs" />
+    <Compile Include="Migrations\202103261940185_menuUpdated.designer.cs">
+      <DependentUpon>202103261940185_menuUpdated.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
@@ -214,6 +219,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Travel.cshtml" />
+    <Content Include="Views\Menus\AllMenus.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103261317263_Menu-updated.resx">
       <DependentUpon>202103261317263_Menu-updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103261940185_menuUpdated.resx">
+      <DependentUpon>202103261940185_menuUpdated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
