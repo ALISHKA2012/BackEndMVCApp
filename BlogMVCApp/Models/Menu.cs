@@ -12,7 +12,17 @@ namespace BlogMVCApp.Models
         [Required]
         [StringLength(maximumLength: 50, MinimumLength = 2)]
 
-        public string Text { get; set; }
-       
+        public string Name{ get; set; }
+        [Required]
+        public bool IsActive { get; set; }
+        public string ControllerName { get; set; }
+        public byte Order { get; set; }
+        public string ActionName { get; set; }
+
+        public ICollection<Article> Articles { get; set; }
+        public Menu()
+        {
+            Articles = new HashSet<Article>();
+        }
     }
 }
