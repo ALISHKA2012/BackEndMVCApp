@@ -13,7 +13,7 @@ namespace BlogMVCApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202103261940185_menuUpdated"; }
+            get { return "202103271625044_menuUpdated"; }
         }
         
         string IMigrationMetadata.Source
