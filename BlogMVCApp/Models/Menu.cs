@@ -15,14 +15,16 @@ namespace BlogMVCApp.Models
         public string Name{ get; set; }
         [Required]
         public bool IsActive { get; set; }
+
+        public ICollection<Article> Articles { get; set; }
         [Required]
         public string ControllerName { get; set; }
         [Required]
         public byte Order { get; set; }
-        [Required]
+   
         public string ActionName { get; set; }
 
-        public ICollection<Article> Articles { get; set; }
+       
         public Menu()
         {
             Articles = new HashSet<Article>();

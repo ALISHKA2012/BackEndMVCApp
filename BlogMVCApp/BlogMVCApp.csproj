@@ -180,6 +180,10 @@
     <Compile Include="Migrations\202103271625044_menuUpdated.designer.cs">
       <DependentUpon>202103271625044_menuUpdated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104021759367_MenuUpdeted.cs" />
+    <Compile Include="Migrations\202104021759367_MenuUpdeted.designer.cs">
+      <DependentUpon>202104021759367_MenuUpdeted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Author.cs" />
@@ -235,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103271625044_menuUpdated.resx">
       <DependentUpon>202103271625044_menuUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104021759367_MenuUpdeted.resx">
+      <DependentUpon>202104021759367_MenuUpdeted.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
